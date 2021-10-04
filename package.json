@@ -1,16 +1,24 @@
 {
-  "name": "bot_financebr",
+  "name": "bot-financeBR",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto com finalidade de aprendizado.<br />",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vapg2015/bot-financeBR.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vapg2015/bot-financeBR/issues"
+  },
+  "homepage": "https://github.com/Vapg2015/bot-financeBR#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.22.0",
     "cheerio": "^1.0.0-rc.10",
     "dotenv": "^10.0.0",
     "twit": "^2.2.11"

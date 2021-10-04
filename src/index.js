@@ -41,7 +41,7 @@ async function sendTweet(send=true){
      ⏳ Atualização a cada hora\n\n
 
      🪙 1 BTC - ${bitcoinValue}
-     💎 1 ETC - ${ethereumValue}
+     💎 1 ETH - ${ethereumValue}
      ❈  1 ADA - ${cardanoValue}
      ✖️ 1 XRP - ${rippleValue}
      🐶 1 DOGE - ${dogecoinValue}
