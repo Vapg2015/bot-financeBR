@@ -9,3 +9,16 @@ Vale informar que para a criação do bot, a conta na qual o bot irá atuar deve
 
 Link para o perfil da Bot Finance: https://twitter.com/BotFinanceBR <br />
 Link para o Twitter Developer: https://developer.twitter.com/en/
+
+-----------------------------------------------------------------------------
+
+Project for learning purposes.<br />
+
+Bot Finance is a bot on Twitter that posts every hour, with the value in R$ (BRL) of some cryptocurrencies, Bitcoin, Ethereum, Cardano, Dogecoin, Ripple and also the quotation of the Dollar and the Tourism Dollar.<br />
+The bot extracts the values from the website https://dolarhoje.com/, and assembles a Tweet with the information.<br />
+It uses Dotenv packages, to control variable environments, keeping access tokens more securely, and Twit that allows you to control your Twitter account.<br />
+
+It is worth informing that to create the bot, the account in which the bot will act must be registered with Twitter Developer. Just log in with your account and register by answering a few questions about the project.<br />
+
+Link to Bot Finance profile: https://twitter.com/BotFinanceBR <br />
+Link to Twitter Developer: https://developer.twitter.com/en/
