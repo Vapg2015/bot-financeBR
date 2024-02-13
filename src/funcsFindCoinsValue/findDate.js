@@ -11,7 +11,9 @@ function findDate(){
     var hour = newDate.getHours();
     var minute = newDate.getMinutes();
 
-    return `${date >= 10 ? date : `0${date}`}/${month >= 10 ? month : `0${month}`}/${year} ${hour}:${minute}h`;
+    return `${hour}:${minute}h`;
     
 }
 module.exports = findDate;
+
+// console.log(findDate())

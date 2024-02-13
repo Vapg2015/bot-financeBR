@@ -1,10 +1,10 @@
 {
-  "name": "bot-financeBR",
+  "name": "bot-financebr",
   "version": "1.0.0",
   "description": "Projeto com finalidade de aprendizado.<br />",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/Vapg2015/bot-financeBR#readme",
   "dependencies": {
-    "axios": "^0.22.0",
+    "axios": "^1.6.7",
     "cheerio": "^1.0.0-rc.10",
     "dotenv": "^10.0.0",
-    "twit": "^2.2.11"
-  }
+    "twit": "^1.1.20",
+    "twitter-api-v2": "^1.16.0"
+  },
+  "devDependencies": {}
 }
