@@ -9,7 +9,7 @@ const findCardano = require("./funcsFindCoinsValue/findCardanoValue");
 const findRipple = require("./funcsFindCoinsValue/findRippleValue");
 const findDogecoin = require("./funcsFindCoinsValue/findDogecoinValue");
 const findDolarTur = require("./funcsFindCoinsValue/findDolarTurValue");
-const findDate = require('./funcsFindCoinsValue/findDate');
+// const findDate = require('./funcsFindCoinsValue/findDate');
 
 // Importando Twit e dotenv
 var twit = require("twit");
@@ -30,7 +30,7 @@ require("dotenv").config();
 const sendTweet = async (send = true) => {
 // async function sendTweet(send = true) {
     try {
-        const date = findDate();
+        // const date = findDate();
 
         const bitcoinValue = await findBitcoin();
         const dolarValue = await findDolar();
