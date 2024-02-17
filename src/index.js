@@ -1,4 +1,3 @@
-const { TwitterApi } = require("twitter-api-v2");
 const client = require("./config/client");
 
 // importando funções para obter os valores das moedas
@@ -11,27 +10,10 @@ const findDogecoin = require("./funcsFindCoinsValue/findDogecoinValue");
 const findDolarTur = require("./funcsFindCoinsValue/findDolarTurValue");
 // const findDate = require('./funcsFindCoinsValue/findDate');
 
-// Importando Twit e dotenv
-var twit = require("twit");
-require("dotenv").config();
-
-// Inicializando o BOT
-// const bot = new twit({
-//     consumer_key: process.env.CONSUMER_KEY,
-
-//     consumer_secret: process.env.CONSUMER_SECRET,
-//     access_token: process.env.ACCESS_TOKEN,
-
-//     access_token_secret: process.env.ACCESS_TOKEN_SECRET,
-//     timeout_ms: 60*1000
-// });
-
 // Função que envia Tweets
-const sendTweet = async (send = true) => {
-// async function sendTweet(send = true) {
+const sendTweet = async () => {
     try {
         // const date = findDate();
-
         const bitcoinValue = await findBitcoin();
         const dolarValue = await findDolar();
         const ethereumValue = await findEthereum();
@@ -42,40 +24,24 @@ const sendTweet = async (send = true) => {
 
         //Conteudo do post que vai ser enviado
         let tweet = `
+⏳ Atualização a cada hora\n\n
 
-     ⏳ Atualização a cada hora\n\n
+   🪙 1 BTC - ${bitcoinValue}
+   💎 1 ETH - ${ethereumValue}
+   ❈  1 ADA - ${cardanoValue}
+   ✖️ 1 XRP - ${rippleValue}
+   🐶 1 DOGE - ${dogecoinValue}
 
-     🪙 1 BTC - ${bitcoinValue}
-     💎 1 ETH - ${ethereumValue}
-     ❈  1 ADA - ${cardanoValue}
-     ✖️ 1 XRP - ${rippleValue}
-     🐶 1 DOGE - ${dogecoinValue}
+   💵 1 US$ - ${dolarValue}
+   ✈️ 1 US$ Tur - ${dolarTurValue}\n\n
 
-     💵 1 US$ - ${dolarValue}
-     ✈️ 1 US$ Tur - ${dolarTurValue}\n\n
-
-     #bitcoin #ethereum #cardano #ripplexrp #dogecoin
-    
-    `;
-
-        // if (send) {
-        //     bot.post(
-        //         "statuses/update",
-        //         { status: tweet },
-        //         (err, data, response) => {
-        //             console.log("Dados: ", data);
-        //         }
-        //     );
-        // } else {
-        //     console.log("O Tweet não será enviado");
-        // }
-
+#bitcoin #ethereum #cardano #ripplexrp #dogecoin
+        `;
         const send = await client.v2.tweet(tweet);
-
     } catch (error) {
         console.log(error);
     }
-}
+};
 
 sendTweet();
 setInterval(sendTweet, 3600000);
