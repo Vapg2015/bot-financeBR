@@ -36,3 +36,6 @@ Any ideas or doubts, contact me on: <br />
 E-mail: v.pgalvao1@gmail.com <br />
 Instagram: @vitor.galvao1 <br />
 Twitter (X): @vitor_galvao0 <br />
+
+![BannerBotFinance](https://github.com/Vapg2015/bot-financeBR/blob/main/TwitterProfile/BannerBotFinance.jpg)
+
